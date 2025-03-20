@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm Tác giả"
+        android:gravity="center"
+        android:textColor="#f00"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/editTextAddNameTG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Tên Tác giả"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextAddEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextAddNameTG"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextAddDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextAddEmail"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Địa chỉ"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonCloseTG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextAddSodienthoai"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="44dp"
+        android:layout_toEndOf="@+id/buttonAddTG"
+        android:text="Hủy" />
+
+    <Button
+        android:id="@+id/buttonAddTG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextAddSodienthoai"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="44dp"
+        android:text="Thêm" />
+
+    <EditText
+        android:id="@+id/editTextAddSodienthoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextAddDiaChi"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Số Điện thoại"
+        android:inputType="number" />
+
+
+</RelativeLayout>
